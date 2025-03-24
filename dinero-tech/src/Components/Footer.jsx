@@ -14,13 +14,19 @@ const Footer = () => {
   const X = "https://twitter.com/@DynamicStreets ";
   const IG = "https://www.instagram.com/dssempowerment/";
 
+  const currentYear = new Date().getFullYear();
+
   return (
-    <div className="flex flex-col p-12  bg-[#525560] mt-4 justify-between xs:flex-col p-4">
+    <div className="flex flex-col p-12  bg-black mt-4 justify-between xs:flex-col p-4">
       <div className="flex flex-row w-full justify-between xs:flex-col mb-8">
-        <p className="text-base  font-normal text-white">
-          dssempowerment@gmail.com
-        </p>
-        {/* <p>+234 806 731 8885</p> */}
+        <div className="flex flex-col">
+          <p className="text-base  font-normal text-white">
+            +234 916 603 2718{" "}
+          </p>
+          <p className="text-base  font-normal text-white">
+            dinerotechnologieslimited@gmail.com
+          </p>
+        </div>
 
         <div className="flex flex-row ">
           <Link to={Facebook} target="_blank">
@@ -47,7 +53,7 @@ const Footer = () => {
         </div>
       </div>
       <h4 className="text-base font-normal text-white xs:text-xs mb-4">
-        © 2024 Dynamic Street Soccer . All rights reserved.
+        © {currentYear} Dinero Technologies. All rights reserved.
       </h4>
     </div>
   );

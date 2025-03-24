@@ -28,9 +28,8 @@ const Contact = () => {
               We'd love to hear from you
             </h1>
             <p>
-              Have any question in mind or want to enquire about on
-              participation or sponsorships? Please feel free to contact us
-              through the form or the following details.
+              Have any question in mind or want to enquire about collaborations
+              on projects? Please feel free to contact us.
             </p>
           </div>
         </div>
@@ -38,27 +37,18 @@ const Contact = () => {
           <div className="flex flex-col w-full">
             <h2 className="text-xl font-bold text-black mb-4">Let's talk! </h2>
             <div className="flex flex-row xs:flex-col">
-              <p className="text-lg font-normal text-black mr-8">
-                0708 022 6755, 0802 758 147
-              </p>
+              <p className="text-lg font-normal text-black mr-8">09166032718</p>
               <p
                 className="
                 text-lg
                 font-normal
                 text-black"
               >
-                dssempowerment@gmail.com
+                dinerotechnologieslimited@gmail.com
               </p>
             </div>
           </div>
-          <div className="flex flex-col">
-            <h2 className="text-xl font-bold text-black mb-4">Head Office</h2>
-            <div>
-              <p className="text-lg font-normal text-black">
-                1 Adegunwa Street, Alagomeji, Yaba, Lagos State
-              </p>
-            </div>
-          </div>
+
           <div className="flex flex-row  ">
             <Link to={Facebook} target="_blank">
               {" "}
@@ -84,7 +74,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <Partake />
+      {/* <Partake /> */}
       <Footer />
     </div>
   );

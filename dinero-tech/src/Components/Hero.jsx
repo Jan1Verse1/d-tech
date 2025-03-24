@@ -27,7 +27,7 @@ const Hero = () => {
           competitive landscape.
         </p>
         <button className="px-3 py-2 bg-black rounded-lg text-sm text-white h-10 mt-4">
-          <Link to="WhatWeDo" onClick={() => setNav(false)}>
+          <Link to="Contact" onClick={() => setNav(false)}>
             Reach Out to Us
           </Link>
         </button>

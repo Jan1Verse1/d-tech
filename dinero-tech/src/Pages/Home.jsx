@@ -4,7 +4,7 @@ import Hero from "../Components/Hero";
 
 // import Join from "../Components/Join";
 import Achievement from "../Components/Achievement";
-// import Partake from "../Components/Partake";
+import Partake from "../Components/Partake";
 import Footer from "../Components/Footer";
 
 const Home = () => {
@@ -14,7 +14,7 @@ const Home = () => {
       <Hero />
       {/* <Join /> */}
       <Achievement />
-      {/* <Partake /> */}
+      <Partake />
       <Footer />
     </div>
   );
