@@ -25,7 +25,7 @@ const Achievement = () => {
         <div className="flex flex-col items-center">
           <h1 className="text-5xl font-bold text-black mb-4">+5</h1>
           <p className="text-lg font-normal text-black text-center">
-            Products sShipped
+            Products Shipped
           </p>
         </div>
       </div>

@@ -31,16 +31,6 @@ const Header = () => {
                   Home
                 </Link>
               </li>
-              <li className="p-4">
-                <Link to="/WhoWeAre" onClick={() => setNav(false)}>
-                  Who we are
-                </Link>
-              </li>
-              <li className="p-4">
-                <Link to="/WhatWeDo" onClick={() => setNav(false)}>
-                  What we do
-                </Link>
-              </li>
             </ul>
             <button className="flex flex-row px-3 py-2 bg-black rounded-lg items-center justify-center text-sm text-white border-none h-10 w-max mt-1">
               <Link to="/Contact" onClick={() => setNav(false)}>
@@ -62,16 +52,6 @@ const Header = () => {
             <li className="p-4">
               <Link to="/" onClick={() => setNav(false)}>
                 Home
-              </Link>
-            </li>
-            <li className="p-4">
-              <Link to="/WhoWeAre" onClick={() => setNav(false)}>
-                Who we are
-              </Link>
-            </li>
-            <li className="p-4">
-              <Link to="/WhatWeDo" onClick={() => setNav(false)}>
-                What we do
               </Link>
             </li>
           </ul>
