@@ -32,7 +32,7 @@ const Products = () => {
       title: "Dinero Bill Pay App & Website",
       description:
         "A seamless bill payment solution designed for convenience and reliability.",
-      productUrl: "https://yourwebsite.com/products/ux-design-system",
+      productUrl: "https://www.dinerobillpay.com/",
     },
     {
       imageUrl:
@@ -40,7 +40,7 @@ const Products = () => {
       title: "Dynamic Sponsorship Website",
       description:
         " A digital sponsorship platform connecting brands and opportunities",
-      productUrl: "https://yourwebsite.com/products/ux-design-system",
+      productUrl: "https://dynamic-soccer.vercel.app",
     },
   ];
 
