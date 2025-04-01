@@ -44,10 +44,7 @@ import { Link } from "react-router-dom";
 // Import your background videos/images
 import BackgroundVideo1 from "../assets/images/bg-vid.mp4";
 import BackgroundVideo2 from "../assets/images/bgvid2.mp4";
-// import BackgroundVideo1 from "../assets/images/bg-vid-1.mp4";
-// import BackgroundVideo2 from "../assets/images/bg-vid-2.mp4";
-//import BackgroundImage1 from "../assets/images/bg-img-1.jpg";
-import BackgroundImage1 from "../assets/images/image01.jpg";
+import BackgroundImage1 from "../assets/images/image.jpg";
 //import BackgroundImage1 from "../assets/images/bg-img-1.jpg";
 
 const Hero = () => {
