@@ -44,6 +44,7 @@ import { Link } from "react-router-dom";
 // Import your background videos/images
 import BackgroundVideo1 from "../assets/images/bg-vid.mp4";
 import BackgroundVideo2 from "../assets/images/bgvid2.mp4";
+import BackgroundVideo3 from "../assets/images/bgvid3.mp4";
 // import BackgroundImage1 from "../assets/images/image.jpg";
 
 const Hero = () => {
@@ -66,14 +67,14 @@ const Hero = () => {
         "We create custom solutions tailored to your specific needs and challenges.",
       buttonText: "Contact Us",
     },
-    // {
-    //   background: "image",
-    //   source: BackgroundImage1,
-    //   title: "Expert Team at Your Service",
-    //   description:
-    //     "Our experienced professionals are ready to bring your ideas to life.",
-    //   buttonText: "Contact Us",
-    // },
+    {
+      background: "video",
+      source: BackgroundVideo3,
+      title: "Expert Team at Your Service",
+      description:
+        "Our experienced professionals are ready to bring your ideas to life.",
+      buttonText: "Contact Us",
+    },
   ];
 
   // Auto-rotate slides
