@@ -45,7 +45,6 @@ import { Link } from "react-router-dom";
 import BackgroundVideo1 from "../assets/images/bg-vid.mp4";
 import BackgroundVideo2 from "../assets/images/bgvid2.mp4";
 import BackgroundImage1 from "../assets/images/image.jpg";
-//import BackgroundImage1 from "../assets/images/bg-img-1.jpg";
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -57,7 +56,7 @@ const Hero = () => {
       title: "Building the Future of Technology",
       description:
         "From cutting-edge software engineering to intuitive product design and strategic product management.",
-      buttonText: "Learn More",
+      buttonText: "Contact Us",
     },
     {
       background: "video",
@@ -65,7 +64,7 @@ const Hero = () => {
       title: "Innovative Solutions for Your Business",
       description:
         "We create custom solutions tailored to your specific needs and challenges.",
-      buttonText: "Get Started",
+      buttonText: "Contact Us",
     },
     {
       background: "image",
