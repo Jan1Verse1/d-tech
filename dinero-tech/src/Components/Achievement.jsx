@@ -15,15 +15,15 @@ const Achievement = () => {
       </div>
       <div className="grid grid-cols-3 w-3/4 items-center xs:grid-cols-1 gap-8">
         <div className="flex flex-col items-center">
-          <h1 className="text-5xl font-bold text-black mb-4">+10</h1>
+          <h1 className="text-5xl font-bold text-black mb-4">+25</h1>
           <p className="text-lg font-normal text-black text-center">Clients</p>
         </div>
         <div className="flex flex-col items-center">
-          <h1 className="text-5xl font-bold text-black mb-4">+5</h1>
+          <h1 className="text-5xl font-bold text-black mb-4">+70</h1>
           <p className="text-lg font-normal text-black text-center">Projects</p>
         </div>
         <div className="flex flex-col items-center">
-          <h1 className="text-5xl font-bold text-black mb-4">+5</h1>
+          <h1 className="text-5xl font-bold text-black mb-4">+70</h1>
           <p className="text-lg font-normal text-black text-center">
             Products Shipped
           </p>

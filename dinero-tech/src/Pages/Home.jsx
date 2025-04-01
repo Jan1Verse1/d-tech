@@ -6,6 +6,7 @@ import Achievement from "../Components/Achievement";
 import Partake from "../Components/Partake";
 import Services from "../Components/Services";
 import Products from "../Components/Products";
+import Expertise from "../Components/Expertise";
 import Footer from "../Components/Footer";
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
       <Achievement />
       <Partake />
       <Services />
+      <Expertise />
       <Products />
       <Footer />
     </div>
