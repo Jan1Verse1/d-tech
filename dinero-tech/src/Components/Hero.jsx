@@ -1,51 +1,8 @@
-// import React from "react";
-// import BackgroundVideo from "../assets/images/bg-vid.mp4"; // Renamed for clarity
-// import { Link } from "react-router-dom";
-
-// const Hero = () => {
-//   return (
-//     <div className="relative flex flex-col h-[720px] w-full justify-center items-center overflow-hidden xs:h-auto xs:p-4">
-//       {/* Video Background */}
-//       <video
-//         autoPlay
-//         loop
-//         muted
-//         className="absolute top-0 left-0 w-full h-full object-cover z-0"
-//       >
-//         <source src={BackgroundVideo} type="video/mp4" />
-//         Your browser does not support the video tag.
-//       </video>
-
-//       {/* Content */}
-//       <div className="relative z-10 w-3/4 mb-24 sm:w-3/4 text-center">
-//         <h1 className="text-7xl font-bold text-black mb-4 xs:text-4xl">
-//           Building the Future of Technology, One Solution at a Time
-//         </h1>
-//         <p className="text-2xl font-normal s:text-sm">
-//           From cutting-edge software engineering to intuitive product design and
-//           strategic product management, we empower businesses to succeed in a
-//           competitive landscape.
-//         </p>
-//         <button className="px-3 py-2 bg-black rounded-lg text-sm text-white h-10 mt-4">
-//           <Link to="Contact" onClick={() => setNav(false)}>
-//             Reach Out to Us
-//           </Link>
-//         </button>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Hero;
-
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-
-// Import your background videos/images
 import BackgroundVideo1 from "../assets/images/bg-vid.mp4";
 import BackgroundVideo2 from "../assets/images/bgvid2.mp4";
 import BackgroundVideo3 from "../assets/images/bgvid3.mp4";
-// import BackgroundImage1 from "../assets/images/image.jpg";
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -77,7 +34,7 @@ const Hero = () => {
     },
   ];
 
-  // Auto-rotate slides
+  // Auto-rotate slides every 5 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
@@ -87,12 +44,13 @@ const Hero = () => {
 
   return (
     <div className="relative flex flex-col h-[720px] w-full justify-center items-center overflow-hidden xs:h-auto xs:p-4">
-      {/* Background */}
+      {/* Background Video */}
       {slides[currentSlide].background === "video" ? (
         <video
           autoPlay
           loop
           muted
+          playsInline
           className="absolute top-0 left-0 w-full h-full object-cover z-0 transition-opacity duration-1000"
           key={currentSlide}
         >
@@ -108,27 +66,32 @@ const Hero = () => {
         />
       )}
 
-      {/* Content */}
-      <div className="relative z-10 w-3/4 mb-24 sm:w-3/4 text-center">
-        <h1 className="text-7xl font-bold text-black mb-4 xs:text-4xl">
+      {/* Dark Overlay for better text contrast */}
+      <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 z-1"></div>
+
+      {/* Content Container */}
+      <div className="relative z-10 w-3/4 mb-24 sm:w-3/4 text-center px-4">
+        <h1 className="text-7xl font-bold text-white mb-6 xs:text-4xl sm:text-5xl md:text-6xl">
           {slides[currentSlide].title}
         </h1>
-        <p className="text-2xl font-normal text-black  xs:text-sm">
+        <p className="text-2xl font-normal text-white mb-8 xs:text-lg sm:text-xl">
           {slides[currentSlide].description}
         </p>
-        <button className="px-3 py-2 bg-black rounded-lg text-sm text-white h-10 mt-4">
-          <Link to="Contact">{slides[currentSlide].buttonText}</Link>
+        <button className="px-6 py-3 bg-white text-black rounded-lg text-lg font-medium hover:bg-gray-100 transition-colors duration-300">
+          <Link to="Contact" className="hover:no-underline">
+            {slides[currentSlide].buttonText}
+          </Link>
         </button>
       </div>
 
-      {/* Navigation Dots */}
-      <div className="absolute bottom-8 z-10 flex space-x-2">
+      {/* Slide Indicator Dots */}
+      <div className="absolute bottom-8 z-10 flex space-x-3">
         {slides.map((_, index) => (
           <button
             key={index}
             onClick={() => setCurrentSlide(index)}
-            className={`w-3 h-3 rounded-full ${
-              currentSlide === index ? "bg-black" : "bg-gray-400"
+            className={`w-3 h-3 rounded-full transition-colors duration-300 ${
+              currentSlide === index ? "bg-white" : "bg-gray-400"
             }`}
             aria-label={`Go to slide ${index + 1}`}
           />

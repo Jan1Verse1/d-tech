@@ -19,7 +19,7 @@ const Footer = () => {
 
   return (
     <div className="flex flex-col p-12  bg-gray-300 mt-4 justify-between xs:flex-col p-4">
-      <div className="flex flex-row w-full justify-between xs:flex-col mb-8">
+      <div className="flex flex-col w-full justify-between xs:flex-col mb-8">
         <div>
           <img
             className="w-12 h-12 cursor-pointer"
@@ -27,38 +27,45 @@ const Footer = () => {
             alt="Dinero tech Logo"
           />
         </div>
-        <div className="flex flex-col mb-2">
-          <p className="text-base  font-normal text-black">
-            +234 916 603 2718{" "}
-          </p>
-          <p className="text-base  font-normal text-black">+234 708 022 6755</p>
-          <p className="text-base  font-normal text-black">
-            dinerotechnologieslimited@gmail.com
-          </p>
-        </div>
+        <div className="flex flex-row justify-between xs:flex-col">
+          <div className="flex flex-col mb-2">
+            <div className="flex flex-col">
+              <p className="text-base  font-normal text-black">
+                +234 916 603 2718{" "}
+              </p>
+              <p className="text-base  font-normal text-black">
+                +234 708 022 6755
+              </p>
+            </div>
 
-        <div className="flex flex-row mt-4">
-          <Link to={Facebook} target="_blank">
-            {" "}
-            <FontAwesomeIcon
-              icon={faFacebookF}
-              className="w-6 h-6 mr-4 text-black"
-            />
-          </Link>
-          <Link to={IG} target="_blank">
-            {" "}
-            <FontAwesomeIcon
-              icon={faInstagram}
-              className="w-6 h-6 mr-4 text-black"
-            />
-          </Link>
-          <Link to={X} target="_blank">
-            {" "}
-            <FontAwesomeIcon
-              icon={faXTwitter}
-              className="w-6 h-6 mr-4 text-black"
-            />
-          </Link>
+            <p className="text-base  font-normal text-black">
+              dinerotechnologieslimited@gmail.com
+            </p>
+          </div>
+
+          <div className="flex flex-row mt-4">
+            <Link to={Facebook} target="_blank">
+              {" "}
+              <FontAwesomeIcon
+                icon={faFacebookF}
+                className="w-6 h-6 mr-4 text-black"
+              />
+            </Link>
+            <Link to={IG} target="_blank">
+              {" "}
+              <FontAwesomeIcon
+                icon={faInstagram}
+                className="w-6 h-6 mr-4 text-black"
+              />
+            </Link>
+            <Link to={X} target="_blank">
+              {" "}
+              <FontAwesomeIcon
+                icon={faXTwitter}
+                className="w-6 h-6 mr-4 text-black"
+              />
+            </Link>
+          </div>
         </div>
       </div>
       <h4 className="text-base font-normal text-black xs:text-xs mb-4">
