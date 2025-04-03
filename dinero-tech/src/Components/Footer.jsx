@@ -11,9 +11,10 @@ import {
 import Logo from "../assets/images/Logo.svg";
 
 const Footer = () => {
-  const Facebook = "https://www.facebook.com/dsscompetiton";
-  const X = "https://twitter.com/@DynamicStreets ";
-  const IG = "https://www.instagram.com/dssempowerment/";
+  const Facebook = "";
+  const X = "https://x.com/dinerotech22?s=21";
+  const IG =
+    "https://www.instagram.com/dinero_technology?igsh=b244NTVuaWtqY2Vr&utm_source=qr";
 
   const currentYear = new Date().getFullYear();
 
