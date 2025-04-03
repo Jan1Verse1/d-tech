@@ -9,6 +9,8 @@ import ios from "../assets/images/ios.png";
 import phyton from "../assets/images/phyton.png";
 import react from "../assets/images/reactlogo.png";
 import vue from "../assets/images/vuelogo.png";
+import javalogo from "../assets/images/javalogo.jpg";
+import javascrptlogo from "../assets/images/jslogo.jpg";
 
 const ExpertiseCard = ({ icon, title }) => (
   <div className="bg-white w-24 h-24 col-span-1 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow border border-gray-100 flex flex-col items-center justify-center">
@@ -20,6 +22,8 @@ const ExpertiseCard = ({ icon, title }) => (
 const Expertise = () => {
   const expertise = [
     { icon: figma, title: "Figma" },
+    { icon: javalogo, title: "Java" },
+    { icon: javascrptlogo, title: "JavaScript" },
     { icon: angular, title: "Angular" },
     { icon: azure, title: "Azure" },
     { icon: cplus, title: "C++" },
