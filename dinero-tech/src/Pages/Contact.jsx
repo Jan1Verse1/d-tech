@@ -19,27 +19,28 @@ const Contact = () => {
   return (
     <div>
       <Header />
-      <div className="grid grid-cols-1 w-full p-8 justify-around gap-12 h-auto bg-[#FAF7F2] xs:grid-cols-1">
-        <div className="flex flex-col w-full p-2 xs:flex-col">
-          <div className="flex flex-col align-baseline">
-            <h1 className="text-5xl font-bold text-black mb-4">
-              We'd love to hear from you
-            </h1>
-            <p>
-              Have any question in mind or want to enquire about collaborations
-              on projects? Please feel free to contact us.
-            </p>
-          </div>
-        </div>
 
-        <div className="flex flex-col w-full">
+      <div className="flex flex-col w-full items-center p-2 xs:flex-col">
+        <div className="flex flex-col align-baseline items-center">
+          <h1 className="text-5xl font-bold text-black mb-4">
+            We'd love to hear from you
+          </h1>
+          <p className="text-center">
+            Have any question in mind or want to enquire about collaborations on
+            projects? <br /> Please feel free to contact us.
+          </p>
+        </div>
+        <div className="flex flex-col w-full items-center p-4">
           <div className="flex flex-col xs:flex-col">
-            <p className="text-base  font-normal text-black">
-              +234 916 603 2718{" "}
-            </p>
-            <p className="text-base  font-normal text-black">
-              +234 708 022 6755
-            </p>
+            <div className="flex flex-row xs:flex-col">
+              <p className="text-base  font-normal text-black mr-5">
+                +234 916 603 2718
+              </p>
+              <p className="text-base  font-normal text-black  mr-5">
+                +234 708 022 6755
+              </p>
+            </div>
+
             <p
               className="
                 text-lg
@@ -50,8 +51,9 @@ const Contact = () => {
             </p>
           </div>
         </div>
+      </div>
 
-        {/* <div className="flex flex-row  ">
+      {/* <div className="flex flex-row  ">
           <Link to={Facebook} target="_blank">
             {" "}
             <FontAwesomeIcon
@@ -74,7 +76,6 @@ const Contact = () => {
             />
           </Link>
         </div> */}
-      </div>
 
       <Partake />
       <Footer />
